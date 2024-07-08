@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0%;
+        }
+        .spmain{
+            display: grid;
+            /* height: 100%; */
+            width: 100vw;
+            grid-template-columns: repeat(4,1fr),1fr;
+            grid-template-rows: 80px 300px 300px 300px ;
+            grid-template-areas: "a a a a"
+                                 "b c d e"
+                                 "b f g h"
+                                 "b i j k";
+        }
+        /* @media only screen and (max-width:450px) {
+            .spmain{
+            display: grid;
+            height: 100%;
+            width: 100vw;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 80px 200px 200px 200px 200px  ;
+            grid-template-areas: "a a a "
+                                 "b c d "
+                                 "b e f "
+                                 "b g h "
+                                 "b i j";
+            }
+        } */
+        @media only screen and (max-width:450px) {
+            .spmain{
+            display: grid;
+            /* height: 100%; */
+            width: 100vw;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 80px 200px 200px 200px 200px 200px 200px;
+            grid-template-areas: "a a  "
+                                 "c d "
+                                 "e f "
+                                 "g h"
+                                 "i j"
+                                 "k k";
+            }
+        }
+        .p1 ul li a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        .p1{
+            border: 3px solid black;
+            grid-area: a;
+            margin: 5px;   
+        }
+        .p1 ul li:hover{
+            background-color: rgba(4, 94, 129, 0.386);
+            color: black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        @media only screen and (max-width:450px){
+            .p1 ul li a{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .p1{
+            border: 3px solid black;
+            grid-area: a;
+            margin: 2px;   
+            position: sticky ;
+        }
+        .p1 ul li:hover{
+            background-color: rgba(4, 94, 129, 0.386);
+            color: black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        }
+        /* .p2{
+            border: 3px solid rgb(0, 0, 0);
+            grid-area: b;
+            margin-left: 5px;
+            background-color: rgba(4, 94, 129, 0.386);
+        } */
+        /* @media only screen and (max-width:450px){
+            .p2{
+            border: 3px solid rgb(0, 0, 0);
+            grid-area: b;
+            margin-left: 5px;
+            background-color: rgba(4, 94, 129, 0.386);
+        
+        }
+        } */
+        .p2{
+            border: 3px solid rgb(0, 0, 0);
+            grid-area: b;
+            margin-left: 5px;
+            background-color: rgba(4, 94, 129, 0.386);
+        }
+         @media only screen and (max-width:450px){
+        .p2{
+            border: 3px solid rgb(2, 5, 18);
+            grid-area: d;
+            background-image: url('men (1).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .p2 h3{
+            background-color:rgba(255, 255, 255, 0.568) ;
+            text-align: center;
+        }
+    }
+        .p3{
+            border: 3px solid rgb(0, 12, 9);
+            grid-area: c;
+            background-image: url("men (1).jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+        }
+        h3:hover{
+            cursor: pointer;
+            padding: 10px;
+        }
+        .p3 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+            
+        }
+        @media only screen and (max-width:379px){
+            .p3{
+            border: 3px solid rgb(0, 4, 3);
+            grid-area: c;
+            background-image: url('men (1).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+        }
+        .p3 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+            
+        }
+        }
+        .p4{
+            border: 3px solid rgb(1, 5, 17);
+            grid-area: d;
+            background-image: url('men (2).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* h3:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p4 h3{
+            background-color:rgba(255, 255, 255, 0.568) ;
+            text-align: center;
+        }
+        .p5{
+            border: 3px solid rgb(10, 0, 7);
+            grid-area: e;
+            background-image: url('men (3).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* .p5:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p5 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+        }
+        .p6{
+            border: 3px solid rgb(0, 0, 0);
+            grid-area: f;
+            background-image: url('men (4).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* .p6:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p6 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+        }
+        .p7{
+            border: 3px solid rgb(6, 8, 0);
+            grid-area: g;
+    
+            background-image: url('men (5).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* .p7:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p7 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+        }
+        .p8{
+            border: 3px solid rgb(9, 0, 3);
+            grid-area: h;
+            background-image: url('men (6).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* .p8:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p8 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+        }
+        .p9{
+            border: 3px solid rgb(6, 8, 0);
+            grid-area: i;
+            background-image: url('men (7).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* .p9:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p9 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+        }
+        .p10{
+            border: 3px solid rgb(11, 0, 0);
+            grid-area: j;
+            background-image: url('men (8).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* .p10:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p10 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+        }
+        .p11{
+            border: 3px solid rgb(7, 0, 0);
+            grid-area: k;
+            background-image: url('men (9).jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        /* .p11:hover{
+            cursor: pointer;
+            padding: 10px;
+        } */
+        .p11 h3{
+            background-color: rgba(255, 255, 255, 0.568);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <nav class="header1">
+            <nav class="navlist">
+            <ul>
+                <div class="nav1">
+                <li><a href="profile.html"><img src="profile.png" height="30vh" ></a></li>
+                <li><img src="cart.png" height="30vh"></li>
+            </div>
+                <div class="logo">
+                    <li><a href="index.html"><img src="logo v.jpg" height="50vh"></a></li>
+                </div>
+               
+            </ul>
+        </div>
+    </div>
+    </nav>
+    </nav> 
+    <div class="spmain">
+        <div class="p1">
+            <nav>
+                <ul style="display: flex; justify-content: space-evenly; margin-top: 30px; list-style-type: none; text-decoration: none;">
+                    <li class="bc"><a href="shopmen.html">MEN</a></li>
+                    <li class="bc"><a href="shopwomen.html">WOMEN</a></li>
+                    <li class="bc"><a href="">KIDS</a></li>
+                    <li class="bc"><a href="">HEALTH CARE</a></li>
+                    <li class="bc"><a href="">NUTRITION</a></li>
+                    <li class="bc"><a href="shoppage.html">SHOP</a></li>
+                    <li class="bc"><a href=shop.html>NEAR BY SHOP</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="p2">
+            <h1>Filter</h1>
+            <form>
+                <label>MEN</label>
+                <input type="checkbox" name="men" id="men" value="1"><br><br>
+                <script>
+                    document.addEventListener("DOMContentLoaded",function(){
+                        document.getElementById('men').addEventListener('click',men);
+                    });
+                    function men(){
+                        if(this.checked){
+                            window.location='shopmen.html';
+                        }
+                    }
+                </script>
+                <label>WOMEN</label>
+                
+                <input type="checkbox" name="women" id="women" value="2"><br><br>
+                <script>
+                     document.addEventListener("DOMContentLoaded",function(){
+                        document.getElementById('women').addEventListener('click',women);
+                    });
+                    function women(){
+                        if(this.checked){
+                            window.location='shopwomen.html';
+                        }
+                    }
+                </script>
+                <label>KIDS</label>
+                <input type="checkbox"><br><br>
+                <label>HEALTH CARE</label>
+                <input type="checkbox"><br><br>
+                <label>NUTRITION</label>
+                <input type="checkbox"><br><br>
+                <label>ACCESSORIES</label>
+                <input type="checkbox"><br><br>
+            </form>
+        </div>
+<!-- {
+            <div class="p2" st>
+                <h3>offer zone</h3>
+                <h3>999</h3>
+            </div>
+        } -->
+        <div class="p3">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p4">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p5">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p6">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p7">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p8">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p9">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p10">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+        <div class="p11">
+            <h3>offer zone</h3>
+            <h3>999</h3>
+        </div>
+    </div>
+</body>
+</html>
